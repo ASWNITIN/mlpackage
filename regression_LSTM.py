@@ -270,7 +270,7 @@ if os.path.isfile(model_path):
     y_true_test = label_array_test_last
     
     # Inject false data into predictions
-    num_false_points = 20  # Number of false data points to inject
+    num_false_points = 10  # Number of false data points to inject
     y_pred_test_with_false_data = inject_false_data(np.copy(y_pred_test), num_false_points)
 
     # Plot predictions with injected false data
